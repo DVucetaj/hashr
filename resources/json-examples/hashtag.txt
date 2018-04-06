@@ -1,0 +1,235 @@
+[ { text: 'Sinclair', indices: [ 87, 96 ] },
+  { text: 'Trump', indices: [ 100, 106 ] },
+  { text: 'Americans', indices: [ 108, 118 ] } ]
+[ { text: 'MAGA', indices: [ 31, 36 ] },
+  { text: 'Trump', indices: [ 40, 46 ] },
+  { text: 'tcot', indices: [ 47, 52 ] },
+  { text: 'NRA', indices: [ 53, 57 ] },
+  { text: '2A', indices: [ 58, 61 ] },
+  { text: 'DeepState', indices: [ 62, 72 ] },
+  { text: 'DOJ', indices: [ 75, 79 ] },
+  { text: 'FBI', indices: [ 86, 90 ] } ]
+[]
+[ { text: 'Trump', indices: [ 36, 42 ] } ]
+[ { text: 'Trump', indices: [ 36, 42 ] } ]
+[ { text: 'Trump', indices: [ 19, 25 ] },
+  { text: 'Obama', indices: [ 33, 39 ] } ]
+[ { text: 'StopTheCaravan', indices: [ 74, 89 ] },
+  { text: 'StopTheInvasion', indices: [ 90, 106 ] },
+  { text: 'MAGA', indices: [ 107, 112 ] },
+  { text: 'MakeAmericaGreatAgain', indices: [ 113, 135 ] } ]
+[ { text: 'Trump', indices: [ 82, 88 ] } ]
+[ { text: 'SinclairBroadcasting', indices: [ 15, 36 ] },
+  { text: 'SinclairBrainwashing', indices: [ 37, 58 ] },
+  { text: 'TheResistance', indices: [ 59, 73 ] },
+  { text: 'MAGA', indices: [ 74, 79 ] },
+  { text: 'Trump', indices: [ 80, 86 ] },
+  { text: 'FoxNews', indices: [ 87, 95 ] },
+  { text: 'Resist', indices: [ 96, 103 ] },
+  { text: 'ImpeachTrump', indices: [ 104, 117 ] },
+  { text: 'TuesdayThoughts', indices: [ 118, 134 ] } ]
+[]
+[ { text: 'POTUS', indices: [ 31, 37 ] },
+  { text: 'Trump', indices: [ 38, 44 ] } ]
+[ { text: 'Trump', indices: [ 132, 138 ] } ]
+[ { text: 'Trump', indices: [ 41, 47 ] },
+  { text: 'bigotry', indices: [ 77, 85 ] },
+  { text: 'prejudice', indices: [ 90, 100 ] } ]
+[ { text: 'bluewave', indices: [ 18, 27 ] },
+  { text: 'Election2018', indices: [ 31, 44 ] },
+  { text: 'Republican', indices: [ 59, 70 ] } ]
+[ { text: 'TrumpIsAMoron', indices: [ 105, 119 ] },
+  { text: 'TrumpIsACoward', indices: [ 120, 135 ] } ]
+[ { text: 'BreakingNews', indices: [ 18, 31 ] },
+  { text: 'Trump', indices: [ 41, 47 ] } ]
+[ { text: 'Trump', indices: [ 23, 29 ] } ]
+[ { text: 'Trump', indices: [ 21, 27 ] },
+  { text: 'Russie', indices: [ 50, 57 ] } ]
+[ { text: 'Trump', indices: [ 42, 48 ] },
+  { text: 'Syria', indices: [ 55, 61 ] },
+  { text: 'foxnews', indices: [ 104, 112 ] },
+  { text: 'cnn', indices: [ 113, 117 ] },
+  { text: 'ap', indices: [ 118, 121 ] } ]
+[ { text: 'BREAKING', indices: [ 16, 25 ] },
+  { text: 'COLLUSION', indices: [ 26, 36 ] },
+  { text: 'Turns', indices: [ 49, 55 ] },
+  { text: 'RogerStone', indices: [ 75, 86 ] },
+  { text: 'Assange', indices: [ 124, 132 ] } ]
+[]
+[ { text: 'CHPninAforizmaları', indices: [ 20, 39 ] },
+  { text: 'Putin', indices: [ 40, 46 ] },
+  { text: 'Trump', indices: [ 79, 85 ] },
+  { text: 'Ma', indices: [ 118, 121 ] } ]
+[ { text: 'Trump', indices: [ 8, 14 ] } ]
+[ { text: 'Trump', indices: [ 14, 20 ] },
+  { text: 'TrumpRussia', indices: [ 21, 33 ] },
+  { text: 'TrumpRussiaConspiracy', indices: [ 34, 56 ] },
+  { text: 'TrumpRussiaInvestigation', indices: [ 57, 82 ] },
+  { text: 'Truth', indices: [ 83, 89 ] },
+  { text: 'TrumpLiesMatter', indices: [ 90, 106 ] },
+  { text: 'ObstructionOfJustice', indices: [ 107, 128 ] } ]
+[ { text: 'Trump', indices: [ 33, 39 ] },
+  { text: 'BoycottSinclair', indices: [ 71, 87 ] },
+  { text: 'BoycottSinclairAdverts', indices: [ 89, 112 ] },
+  { text: 'SinclairMedia', indices: [ 114, 128 ] } ]
+[]
+[ { text: 'Trump', indices: [ 17, 23 ] } ]
+[ { text: 'Trump', indices: [ 16, 22 ] },
+  { text: 'Mexique', indices: [ 84, 92 ] } ]
+[ { text: 'trump', indices: [ 34, 40 ] },
+  { text: 'maga', indices: [ 41, 46 ] } ]
+[ { text: 'Trump', indices: [ 20, 26 ] } ]
+[ { text: 'Trump', indices: [ 16, 22 ] },
+  { text: 'Syria', indices: [ 75, 81 ] } ]
+[ { text: 'Reelect', indices: [ 15, 23 ] },
+  { text: 'Trump', indices: [ 24, 30 ] },
+  { text: 'TrumpTrain2020', indices: [ 31, 46 ] } ]
+[ { text: 'WhiteHouse', indices: [ 4, 15 ] },
+  { text: 'infrastructure', indices: [ 22, 37 ] },
+  { text: 'Trump', indices: [ 79, 85 ] } ]
+[ { text: 'BreakingNews', indices: [ 21, 34 ] },
+  { text: 'Trump', indices: [ 44, 50 ] } ]
+[ { text: 'ÚLTIMAHORA', indices: [ 13, 24 ] },
+  { text: 'Trump', indices: [ 27, 33 ] } ]
+[]
+[ { text: 'DontheCon', indices: [ 14, 24 ] },
+  { text: 'LazyDonald', indices: [ 25, 36 ] },
+  { text: 'LazyTrump', indices: [ 37, 47 ] },
+  { text: 'Dotard', indices: [ 48, 55 ] },
+  { text: 'Trump', indices: [ 56, 62 ] } ]
+[ { text: 'larry_kudlow', indices: [ 14, 27 ] },
+  { text: 'Trump', indices: [ 56, 62 ] },
+  { text: 'Deplorables', indices: [ 63, 75 ] } ]
+[ { text: 'Trump', indices: [ 30, 36 ] },
+  { text: 'Immigration', indices: [ 53, 65 ] },
+  { text: 'FakeNews', indices: [ 103, 112 ] } ]
+[]
+[]
+[ { text: 'Trump', indices: [ 10, 16 ] },
+  { text: 'Democrat', indices: [ 27, 36 ] },
+  { text: 'Republican', indices: [ 37, 48 ] } ]
+[ { text: 'Trump', indices: [ 0, 6 ] } ]
+[ { text: 'folowback', indices: [ 0, 10 ] },
+  { text: 'ICO', indices: [ 11, 15 ] },
+  { text: 'litecoin', indices: [ 16, 25 ] },
+  { text: 'nxt', indices: [ 27, 31 ] },
+  { text: 'rufollow', indices: [ 33, 42 ] },
+  { text: 'rufollowback', indices: [ 43, 56 ] },
+  { text: 'xrp', indices: [ 58, 62 ] },
+  { text: 'Follow', indices: [ 63, 70 ] },
+  { text: 'follow4follow', indices: [ 71, 85 ] },
+  { text: 'Following', indices: [ 86, 96 ] },
+  { text: 'Followback', indices: [ 97, 108 ] } ]
+[ { text: 'Trump', indices: [ 17, 23 ] } ]
+[ { text: 'Trump', indices: [ 36, 42 ] } ]
+[]
+[ { text: 'RussianCollusion', indices: [ 31, 48 ] },
+  { text: 'MuellerInvestigation', indices: [ 53, 74 ] } ]
+[ { text: 'Trump', indices: [ 23, 29 ] } ]
+[]
+[ { text: 'Trump', indices: [ 58, 64 ] },
+  { text: 'agriculture', indices: [ 68, 80 ] } ]
+[ { text: 'Trump', indices: [ 51, 57 ] } ]
+[ { text: 'Trump', indices: [ 0, 6 ] },
+  { text: 'CNN', indices: [ 34, 38 ] } ]
+[ { text: 'TheResistance', indices: [ 69, 83 ] },
+  { text: 'MAGA', indices: [ 84, 89 ] },
+  { text: 'Trump', indices: [ 90, 96 ] },
+  { text: 'FoxNews', indices: [ 97, 105 ] },
+  { text: 'Resist', indices: [ 106, 113 ] },
+  { text: 'ImpeachTrump', indices: [ 114, 127 ] } ]
+[ { text: 'VoteRed', indices: [ 42, 50 ] },
+  { text: 'Democrats', indices: [ 103, 113 ] } ]
+[ { text: 'Trump', indices: [ 100, 106 ] } ]
+[ { text: 'MLK50', indices: [ 21, 27 ] },
+  { text: 'WednesdayWisdom', indices: [ 28, 44 ] },
+  { text: 'NationalHugANewsPersonDay', indices: [ 45, 71 ] },
+  { text: 'SafePlaceSelfie', indices: [ 72, 88 ] },
+  { text: 'QAnon', indices: [ 89, 95 ] },
+  { text: 'TCOT', indices: [ 96, 101 ] },
+  { text: 'Trump', indices: [ 102, 108 ] },
+  { text: 'CCOT', indices: [ 109, 114 ] },
+  { text: 'PJNET', indices: [ 115, 121 ] },
+  { text: 'MAGA', indices: [ 122, 127 ] },
+  { text: 'KAG', indices: [ 128, 132 ] },
+  { text: 'Poll', indices: [ 133, 138 ] } ]
+[ { text: 'Trump', indices: [ 36, 42 ] } ]
+[ { text: 'Trump', indices: [ 16, 22 ] } ]
+[ { text: 'TheResistance', indices: [ 79, 93 ] },
+  { text: 'MAGA', indices: [ 94, 99 ] },
+  { text: 'Trump', indices: [ 100, 106 ] },
+  { text: 'FoxNews', indices: [ 107, 115 ] },
+  { text: 'Resist', indices: [ 116, 123 ] },
+  { text: 'ImpeachTrump', indices: [ 124, 137 ] } ]
+[ { text: 'Trump', indices: [ 36, 42 ] } ]
+[ { text: 'Trump', indices: [ 81, 87 ] },
+  { text: 'McCarthy', indices: [ 89, 98 ] } ]
+[ { text: 'ÚLTIMAHORA', indices: [ 13, 24 ] },
+  { text: 'Trump', indices: [ 27, 33 ] } ]
+[ { text: 'Trump', indices: [ 29, 35 ] } ]
+[]
+[ { text: 'trump', indices: [ 100, 106 ] } ]
+[ { text: 'Trump', indices: [ 23, 29 ] } ]
+[ { text: 'TRUMP', indices: [ 94, 100 ] },
+  { text: 'MAGA', indices: [ 116, 121 ] } ]
+[ { text: 'Trump', indices: [ 29, 35 ] } ]
+[ { text: 'Mueller', indices: [ 44, 52 ] },
+  { text: 'trump', indices: [ 60, 66 ] },
+  { text: 'Collusion', indices: [ 83, 93 ] },
+  { text: 'Russia', indices: [ 99, 106 ] } ]
+[ { text: 'Trump', indices: [ 19, 25 ] },
+  { text: 'Obama', indices: [ 33, 39 ] } ]
+[ { text: 'Trump', indices: [ 39, 45 ] } ]
+[ { text: 'Trump', indices: [ 23, 29 ] } ]
+[ { text: 'TWITTER', indices: [ 18, 26 ] },
+  { text: 'Trump', indices: [ 47, 53 ] },
+  { text: 'YouTube', indices: [ 80, 88 ] } ]
+[ { text: 'Trump', indices: [ 36, 42 ] } ]
+[]
+[ { text: 'Trump', indices: [ 16, 22 ] } ]
+[ { text: 'Trump', indices: [ 23, 29 ] } ]
+[ { text: 'Trump', indices: [ 47, 53 ] } ]
+[ { text: 'truth', indices: [ 14, 20 ] },
+  { text: 'TruthMatters', indices: [ 21, 34 ] },
+  { text: 'StupidIsAsStupidDoes', indices: [ 35, 56 ] },
+  { text: 'lies', indices: [ 57, 62 ] },
+  { text: 'Trump', indices: [ 63, 69 ] },
+  { text: 'TrumpTraitor', indices: [ 70, 83 ] },
+  { text: 'TrumpRussiaInvestigation', indices: [ 84, 109 ] },
+  { text: 'TrumpRussiaConspiracy', indices: [ 110, 132 ] } ]
+[ { text: 'Trump', indices: [ 23, 29 ] } ]
+[]
+[ { text: 'TWITTER', indices: [ 18, 26 ] },
+  { text: 'Trump', indices: [ 47, 53 ] },
+  { text: 'YouTube', indices: [ 80, 88 ] } ]
+[ { text: 'Trump', indices: [ 88, 94 ] } ]
+[ { text: 'Idaho', indices: [ 30, 36 ] },
+  { text: 'GOP', indices: [ 37, 41 ] },
+  { text: 'Republican', indices: [ 101, 112 ] } ]
+[ { text: 'Trump', indices: [ 21, 27 ] } ]
+[ { text: 'WednesdayWisdom', indices: [ 13, 29 ] },
+  { text: 'YouTube', indices: [ 62, 70 ] },
+  { text: 'NasimAghdam', indices: [ 115, 127 ] },
+  { text: 'PETA', indices: [ 129, 134 ] } ]
+[ { text: 'Trump', indices: [ 94, 100 ] } ]
+[ { text: 'MAGA', indices: [ 129, 134 ] } ]
+[]
+[ { text: 'Trump', indices: [ 0, 6 ] },
+  { text: 'Syria', indices: [ 59, 65 ] } ]
+[ { text: 'TRUMP', indices: [ 94, 100 ] },
+  { text: 'MAGA', indices: [ 116, 121 ] } ]
+[ { text: 'TWITTER', indices: [ 18, 26 ] },
+  { text: 'Trump', indices: [ 47, 53 ] },
+  { text: 'YouTube', indices: [ 80, 88 ] } ]
+[ { text: 'Trump', indices: [ 17, 23 ] } ]
+[]
+[ { text: 'Trump', indices: [ 70, 76 ] } ]
+[ { text: 'Trump', indices: [ 17, 23 ] } ]
+[ { text: 'Trump', indices: [ 19, 25 ] },
+  { text: 'Obama', indices: [ 33, 39 ] } ]
+[ { text: 'Trump', indices: [ 24, 30 ] },
+  { text: 'MuellerIsComingForYou', indices: [ 31, 53 ] } ]
+[ { text: 'Rautenfrau', indices: [ 42, 53 ] },
+  { text: 'Merkel', indices: [ 54, 61 ] },
+  { text: 'Wählermanipulation', indices: [ 99, 118 ] },
+  { text: 'CDU', indices: [ 130, 134 ] } ]

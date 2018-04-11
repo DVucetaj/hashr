@@ -1,0 +1,15 @@
+#search-bar-input {
+  width: 20em;
+}
+
+.home .hashtag-results {
+  margin-top: 1.8em;
+}
+
+.home:first-child {
+  margin-top: 100px;
+}
+
+.home:last-child {
+  margin-bottom: 50px;
+}

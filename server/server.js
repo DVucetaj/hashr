@@ -19,5 +19,5 @@ app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.use(controllers);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT);

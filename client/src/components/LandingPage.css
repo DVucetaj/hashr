@@ -1,0 +1,28 @@
+.lpBackground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.lpRed{
+  fill: #FF0000;
+  fill-opacity: 0.8;
+}
+.lpBlue{
+  fill: #4A90E2;
+  fill-opacity: 0.8;
+}
+.lpGreen{
+  fill: #74CB0F;
+  fill-opacity: 0.8;
+}
+.lpYellow{
+  fill: #EAC309;
+  fill-opacity: 0.8;
+}
+.lpWhite{
+  fill: white;
+}

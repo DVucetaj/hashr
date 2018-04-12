@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
+import SearchBar from './SearchBar.js';
+
+
 import './home.css';
+
 
 class Home extends Component {
   constructor() {
@@ -48,6 +52,10 @@ class Home extends Component {
     const { results } = this.state;
     return(
       <div className="container-fluid home">
+        
+        <SearchBar/>
+
+        {/*
         <div className="row fixed-top">
           <nav className="navbar navbar-light bg-light col-12 pt-2 pb-2">
             <form className="form-inline mx-auto text-center" onSubmit={this.handleSubmit}>
@@ -56,6 +64,7 @@ class Home extends Component {
             </form>
           </nav>
         </div>
+        */}
 
         <div className="row hashtag-results">
           <div className="col-3">

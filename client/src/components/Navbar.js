@@ -10,9 +10,14 @@ class Navbar extends React.Component {
 
         <nav className="navbarNav">
           <ul>
-            <Link to="/" className="nav-item nav-link active">Home</Link>
+            <Link to="/" className="nav-item nav-link active">LandingPage</Link>
+            <Link to="/home" className="nav-item nav-link active">Home</Link>
+            
+            {/*
             <Link to="/projects" className="" href="#">Login</Link>
             <Link to="/contact" className="" href="#">Signup</Link>
+            */}
+            
           </ul>
         </nav>
 

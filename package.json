@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "nodemon server.js",
     "heroku-postbuild": "cd client/ && npm install --only=dev && npm install && npm run build"
   },
   "repository": {
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/DVucetaj/hashfinder#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.2",
-    "express": "^4.16.3",
-    "python-shell": "^0.5.0"
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

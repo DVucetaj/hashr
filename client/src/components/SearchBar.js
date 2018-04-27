@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './SearchBar.css';
+
 class SearchBar extends React.Component {
   render() {
     return (
@@ -7,7 +9,7 @@ class SearchBar extends React.Component {
         
         <form className="searchBarForm" onSubmit={this.handleSubmit}>
           <input id="search-bar-input" className="searchBarInput" onChange={this.handleChange} type="text" placeholder="Search hashtags" aria-label="Search" />
-          <button className="searchBarSubmit" type="submit">Submit</button>
+          <button className="linkButton" type="submit">Submit</button>
         </form>
 
       </div>

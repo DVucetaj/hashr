@@ -1,3 +1,24 @@
+.landingPageWrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-areas:
+  "one two three"
+  "four center six"
+  "seven eight nine";
+ }
+.landingPageCenter{
+  grid-area: center;
+  margin-left: -12px;
+  margin-top: 32px;
+}
+.landingPageCenter h2{
+  margin-left: 32px;
+}
+.landingPageCenter h4{
+  margin-left: 16px;
+}
+
 .lpBackground{
   position: absolute;
   top: 0;
@@ -9,20 +30,31 @@
 }
 
 .lpRed{
-  fill: #FF0000;
-  fill-opacity: 0.8;
+  fill: #FF3333;
+}
+.lpPurple{
+  fill: #E37FC0;
 }
 .lpBlue{
   fill: #4A90E2;
-  fill-opacity: 0.8;
 }
-.lpGreen{
-  fill: #74CB0F;
-  fill-opacity: 0.8;
+.lpOrange{
+  fill: #FCA712;
+}
+.lpBeige{
+  fill: #F9ECBB;
+}
+.lpAqua{
+  fill: #8DD7C3;
 }
 .lpYellow{
   fill: #EAC309;
-  fill-opacity: 0.8;
+}
+.lpLime{
+  fill: #DFE61E;
+}
+.lpGreen{
+  fill: #74CB0F;
 }
 .lpWhite{
   fill: white;

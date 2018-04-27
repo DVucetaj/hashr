@@ -9,7 +9,7 @@ class SearchBar extends React.Component {
         
         <form className="searchBarForm" onSubmit={this.handleSubmit}>
           <input id="search-bar-input" className="searchBarInput" onChange={this.handleChange} type="text" placeholder="Search hashtags" aria-label="Search" />
-          <button className="linkButton" type="submit">Submit</button>
+          <button className="linkButton" type="submit">search</button>
         </form>
 
       </div>

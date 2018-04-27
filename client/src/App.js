@@ -17,7 +17,9 @@ class App extends Component {
       <Router>
       <div className="App">
         
+        {/*
         <Navbar/>
+        */}
         
         <div className="appWrapper">
           <Switch>

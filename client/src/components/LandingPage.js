@@ -124,7 +124,7 @@ class LandingPage extends React.Component {
           <div className="landingPageCenter">
             <h2>#hashr</h2>
             <h4>the hash slinging hashtag searcher</h4>
-            <SearchBar/>
+            <SearchBar />
           </div>
         </div>
 

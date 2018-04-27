@@ -1,9 +1,39 @@
 import React, {Component} from 'react';
 import SearchBar from './SearchBar.js';
-
-
 import './home.css';
 
+function HashTagPosts(props) {
+  const posts = props.posts;
+
+  if(posts === undefined) {
+    return (
+      <ul></ul>
+    );
+  } 
+
+  const listPosts = posts.map((post) => {
+    let text = post.text.substr(0, post.text.length - 23);
+    // let date = `${post.created_at.substr(0, 10)} ${post.created_at.substr(post.created_at.length - 4)}`;
+    let date = new Date(posts.created_at);
+    console.log(post);
+
+    return(
+      <li className="col-3" key={post.id}>
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">{date.toDateString()}</h5>
+            <p className="card-text">{text}</p>
+            <a href="#" className="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> 
+      </li>
+    );
+  });
+
+  return (
+    <ul className="row hashtag-results">{listPosts}</ul>
+  );
+}
 
 class Home extends Component {
   constructor() {
@@ -21,9 +51,12 @@ class Home extends Component {
     searchBarInput.focus();
   }
 
-  handleSubmit(event) {
-    event.preventDefault();
-    let { search_term } = this.state;
+  handleSubmit() {
+    let search_term = null;
+    while(search_term === null) {
+      search_term = this.state.search_term;
+    }
+
     fetch(`api/v1/search/${search_term}`, {
       method: "get",
       headers: {
@@ -36,24 +69,24 @@ class Home extends Component {
       return res.json();
     })
     .then((results) => {
-      const { data } = results;
-      this.setState({ results: data });
+      this.setState({ results });
     })
     .catch(err => {
 
     });
   }
 
-  handleChange(event) {
-    this.setState({ search_term: event.target.value });
+  handleChange(search_term) {
+    this.setState({ search_term });
   }
 
   render() {
-    const { results } = this.state;
+    const posts = this.state.results;
+
     return(
       <div className="container-fluid home">
         
-        <SearchBar/>
+        <SearchBar onSearchInputChange={this.handleChange} onSearchFormSubmit={this.handleSubmit} />
 
         {/*
         <div className="row fixed-top">
@@ -65,124 +98,8 @@ class Home extends Component {
           </nav>
         </div>
         */}
+        <HashTagPosts posts={posts} />
 
-        <div className="row hashtag-results">
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>  
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>        
-        </div>
-
-        <div className="row hashtag-results">
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>  
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>        
-        </div>
-
-        <div className="row hashtag-results">
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>  
-          <div className="col-3">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title">Special title treatment</h5>
-                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>        
-        </div>
-        
       </div>
     )
   }

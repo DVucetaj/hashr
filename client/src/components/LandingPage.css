@@ -1,3 +1,16 @@
+.landingPageLogo, .landingPageHeadline{
+  font-family: Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: lighter;
+  color: #41413F;
+}
+.landingPageLogo{
+  font-size: 144px;
+}
+.langinPageHeadline{
+  font-size: 36px;
+}
+
 .landingPageWrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -9,14 +22,6 @@
  }
 .landingPageCenter{
   grid-area: center;
-  margin-left: -12px;
-  margin-top: 32px;
-}
-.landingPageCenter h2{
-  margin-left: 32px;
-}
-.landingPageCenter h4{
-  margin-left: 16px;
 }
 
 .lpBackground{

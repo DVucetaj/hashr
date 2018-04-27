@@ -28,12 +28,13 @@ class LandingPage extends React.Component {
   }
 
   render() {
+    //    
+    //  0  1  2  3
+    //  4  5  6  7
+    //  8  9  10 11
+    //  12 13 14 15
+    
 
-    // 0  1  2  3
-    // 4  5  6  7
-    // 8  9  10 11
-    // 12 13 14 15
-    // let pos0  = ${vW*(0/1440)},   ${vH*(0/1024)};
     // let pos1  = ${vW*(572/1440)}, ${vH*(0/1024)};
     // let pos2  = ${vW*(572/1440)}, ${vH*(0/1024)};
     // let pos3  = ${vW*(1440/1440)},${vH*(0/1024)};
@@ -122,9 +123,9 @@ class LandingPage extends React.Component {
         
         <div className="landingPageWrapper">
           <div className="landingPageCenter">
-            <h2>#hashr</h2>
-            <h4>the hash slinging hashtag searcher</h4>
-            <SearchBar />
+            <h2 className="landingPageLogo">#hashr</h2>
+            <h4 className="landingPageHeadline">the hash slinging hashtag searcher</h4>
+            <SearchBar/>
           </div>
         </div>
 

@@ -12,10 +12,12 @@ function HashTagPosts(props) {
   } 
 
   const listPosts = posts.map((post) => {
+        console.log(post);
+    let user = post.user.name;
     let text = post.text.substr(0, post.text.length - 23);
-    // let date = `${post.created_at.substr(0, 10)} ${post.created_at.substr(post.created_at.length - 4)}`;
-    let date = new Date(posts.created_at);
-    console.log(post);
+    let url = post.entities.urls[0] === undefined ? '#' : post.entities.urls[0].url;
+    let date = `${post.created_at.substr(4, 10)}, ${post.created_at.substr(post.created_at.length - 4)} ${post.created_at.substr(11, 19)}`;
+    date = new Date(date);
 
     return(
       <li className="col-3" key={post.id}>
@@ -23,7 +25,7 @@ function HashTagPosts(props) {
           <div className="card-body">
             <h5 className="card-title">{date.toDateString()}</h5>
             <p className="card-text">{text}</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <a href={url} className="btn btn-primary">{user}</a>
           </div>
         </div> 
       </li>

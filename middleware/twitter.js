@@ -18,7 +18,7 @@ function twitterAPI(search_term) {
         const access_token = data.access_token;
         axios({
           method: 'GET',
-          url: `https://api.twitter.com/1.1/search/tweets.json?q=%23${search_term}&result_type=mixed&count=100`,
+          url: `https://api.twitter.com/1.1/search/tweets.json?q=%23${search_term}&result_type=mixed&lang=en&count=100`,
           headers: { 'Authorization': `Bearer ${access_token}` }
         })
         .then((response) => {

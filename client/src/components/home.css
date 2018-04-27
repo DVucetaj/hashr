@@ -2,14 +2,14 @@
   width: 20em;
 }
 
-.home .hashtag-results {
+.home .hashtag-results, .hashtag-post {
   margin-top: 1.8em;
 }
 
-.home:first-child {
-  margin-top: 100px;
+.hashtag-results {
+  list-style-type: none;
 }
 
-.home:last-child {
-  margin-bottom: 50px;
+.hashtag-post {
+
 }

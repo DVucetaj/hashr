@@ -12,6 +12,9 @@
 }
 
 .landingPageWrapper{
+  height: 100vh;
+  width: 100vw;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr; 
@@ -25,7 +28,7 @@
 }
 
 .lpBackground{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;

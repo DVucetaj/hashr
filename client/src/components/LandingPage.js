@@ -59,7 +59,7 @@ class LandingPage extends React.Component {
     return (
       <div>
     
-        <svg className="lpBackground" width="1440" height={vH}>
+        <svg className="lpBackground">
          
           <polygon className="lpRed"     points={` 
                                                   ${vW*(0/1440)},${vH*(0/1024)} 

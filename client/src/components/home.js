@@ -33,13 +33,21 @@ function HashTagPosts(props) {
     post.entities.hashtags.forEach((tag) => {
       hashTagArr.push(tag.text.toLowerCase());
     })
+    /*
+    x --> item in array
+    i --> index of item
+    a --> array reference, (in this case "list")
+    */
+    hashTagArr = hashTagArr.filter((x, i, a) =>
+      a.indexOf(x) == i
+    );
     return(
       <li className="col-3 hashtag-post" key={post.id}>
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">{date.toDateString()}</h5>
             <p className="card-text">{text}</p>
-            <a href={url} className="btn btn-primary" target="_blank">{user}</a>
+            <a href={"https://twitter.com/" + post.user.screen_name + "/status/" + post.id_str} className="btn btn-primary" target="_blank">{user}</a>
           </div>
         </div>
       </li>
@@ -47,7 +55,7 @@ function HashTagPosts(props) {
   });
   return (
     <div>
-      <ul className="row hashtag-list">{hashTagArr}</ul>
+      <ul className="row hashtag-list">{hashTagArr + " "}</ul>
       <ul className="row hashtag-results">{listPosts}</ul>
     </div>
   );
@@ -87,7 +95,8 @@ class Home extends Component {
       return res.json();
     })
     .then((results) => {
-      results.sort(retweetSort("retweet_count")).reverse();
+      //results.sort(retweetSort("retweet_count")).reverse();
+      console.log(results)
       this.setState({ results });
     })
     .catch(err => {

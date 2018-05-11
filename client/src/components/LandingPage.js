@@ -14,9 +14,11 @@ class LandingPage extends React.Component {
   }
 
   componentDidMount() {
+    const searchBarInput = document.getElementById('search-bar-input');
+    searchBarInput.focus();
+    
     this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);
-  }
+    window.addEventListener('resize', this.updateWindowDimensions);  }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);

@@ -57,6 +57,7 @@ class Home extends Component {
     while(search_term === null) {
       search_term = this.state.search_term;
     }
+    
 
     fetch(`api/v1/search/${search_term}`, {
       method: "get",

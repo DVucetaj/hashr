@@ -24,7 +24,7 @@ function twitterAPI(search_term) {
         .then((response) => {
           if(response.status === 200) {
             const tweets = response.data.statuses;
-            resolve (tweets); 
+            resolve (tweets);
           }
         })
         .catch((error) => {

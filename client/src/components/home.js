@@ -30,17 +30,26 @@ function HashTagPosts(props) {
     let url = post.entities.urls[0] === undefined ? '#' : post.entities.urls[0].url;
     let date = `${post.created_at.substr(4, 10)}, ${post.created_at.substr(post.created_at.length - 4)} ${post.created_at.substr(11, 19)}`;
     date = new Date(date);
+   
     post.entities.hashtags.forEach((tag) => {
-      hashTagArr.push(tag.text.toLowerCase());
+      hashTagArr.push(" " + "#" + tag.text.toLowerCase());
     })
+    
+
     /*
-    x --> item in array
-    i --> index of item
-    a --> array reference, (in this case "list")
+    
+    removes duplicats
+
+    item --> item in array
+    index --> index of item
+    array --> array reference, (in this case "list")
+
     */
-    hashTagArr = hashTagArr.filter((x, i, a) =>
-      a.indexOf(x) == i
+    
+    hashTagArr = hashTagArr.filter((item, index, array) =>
+      array.indexOf(item) == index
     );
+
     return(
       <li className="col-3 hashtag-post" key={post.id}>
         <div className="card">

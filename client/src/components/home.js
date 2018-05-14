@@ -2,16 +2,16 @@ import React, {Component} from 'react';
 import SearchBar from './SearchBar.js';
 import './home.css';
 
-function retweetSort(prop){
-  return function(a, b) {
-  if (a[prop] > b[prop]) {
-    return 1;
-  } else if (a[prop] < b[prop]) {
-    return -1;
-  }
-    return 0;
-  }
-}
+// function retweetSort(prop){
+//   return function(a, b) {
+//   if (a[prop] > b[prop]) {
+//     return 1;
+//   } else if (a[prop] < b[prop]) {
+//     return -1;
+//   }
+//     return 0;
+//   }
+// }
 
 function HashTagPosts(props) {
   const posts = props.posts;
@@ -27,13 +27,13 @@ function HashTagPosts(props) {
   const listPosts = posts.map((post) => {
     let user = post.user.name;
     let text = post.text.substr(0, post.text.length - 23);
-    let url = post.entities.urls[0] === undefined ? '#' : post.entities.urls[0].url;
+    // let url = post.entities.urls[0] === undefined ? '#' : post.entities.urls[0].url;
     let date = `${post.created_at.substr(4, 10)}, ${post.created_at.substr(post.created_at.length - 4)} ${post.created_at.substr(11, 19)}`;
     date = new Date(date);
    
-    post.entities.hashtags.forEach((tag) => {
-      hashTagArr.push(" " + "#" + tag.text.toLowerCase());
-    })
+    // post.entities.hashtags.forEach((tag) => {
+    //   hashTagArr.push(" " + "#" + tag.text.toLowerCase());
+    // })
     
 
     /*
@@ -47,7 +47,7 @@ function HashTagPosts(props) {
     */
     
     hashTagArr = hashTagArr.filter((item, index, array) =>
-      array.indexOf(item) == index
+      array.indexOf(item) === index
     );
 
     return(
@@ -74,7 +74,7 @@ class Home extends Component {
   constructor() {
     super();
     this.state = {
-      search_term: '',
+      search_term: null,
       results: [],
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -83,17 +83,24 @@ class Home extends Component {
 
   componentDidMount() {
     const searchBarInput = document.getElementById('search-bar-input');
-    searchBarInput.focus();
+    searchBarInput.focus();  
+
+    const search_term = this.props.match.params.hashtag;
+
+    if(search_term) {
+      this.handleChange(search_term);
+      searchBarInput.value = search_term;
+      this.handleSubmit(search_term);
+    }
   }
 
-  handleSubmit() {
-    let search_term = null;
-    while(search_term === null) {
+  handleSubmit(hashtag) {
+    let search_term = hashtag;
+    while(!search_term) {
       search_term = this.state.search_term;
     }
-    
 
-    fetch(`api/v1/search/${search_term}`, {
+    fetch(`/api/v1/search/${search_term}`, {
       method: "get",
       headers: {
         'Accept': 'application/json',
@@ -106,11 +113,13 @@ class Home extends Component {
     })
     .then((results) => {
       //results.sort(retweetSort("retweet_count")).reverse();
-      console.log(results)
       this.setState({ results });
+            this.props.history.push({
+        pathname: `/search/${search_term}`
+      });
     })
     .catch(err => {
-      console.error(err);
+
     });
   }
 

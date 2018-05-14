@@ -55,8 +55,6 @@ class LandingPage extends React.Component {
 
     let vW = this.state.vW;
     let vH = this.state.vH;
-    {console.log(vW)}
-    {console.log(vH)}
     
     return (
       <div>
@@ -127,7 +125,7 @@ class LandingPage extends React.Component {
           <div className="landingPageCenter">
             <h2 className="landingPageLogo">#hashr</h2>
             <h4 className="landingPageHeadline">the hash slinging hashtag searcher</h4>
-            <SearchBar/>
+            <SearchBar redirect={true} />
           </div>
         </div>
 

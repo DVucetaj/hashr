@@ -1,24 +1,43 @@
 import React from 'react';
-
+import { Redirect } from 'react-router-dom';
 import './SearchBar.css';
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      redirect: false,
+      redirectLink: '/search'
+    }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
-    this.props.onSearchInputChange(event.target.value);
+    if(!this.props.redirect) {
+      this.props.onSearchInputChange(event.target.value);
+    }
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.onSearchFormSubmit();
+    if(this.props.redirect) {
+      this.setState({
+        redirect: true,
+        redirectLink: `/search/${document.getElementById("search-bar-input").value}`
+      })
+    } else {
+      this.props.onSearchFormSubmit();
+    }
   }
 
   render() {
+    const { redirect, redirectLink } = this.state;
+
+    if(redirect) {
+      return <Redirect to={redirectLink} />
+    }
+
     return (
       <div id="SearchBar">        
         <form className="searchBarForm" onSubmit={this.handleSubmit}>

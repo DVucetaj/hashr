@@ -25,47 +25,48 @@ function HashTagPosts(props) {
 
   let hashTagArr = [];
   const listPosts = posts.map((post) => {
-    let user = post.user.name;
-    let text = post.text.substr(0, post.text.length - 23);
     // let url = post.entities.urls[0] === undefined ? '#' : post.entities.urls[0].url;
+    let user = post.user.name;
+    let screenName = post.user.screen_name
     let date = `${post.created_at.substr(4, 10)}, ${post.created_at.substr(post.created_at.length - 4)} ${post.created_at.substr(11, 19)}`;
     date = new Date(date);
-   
-    // post.entities.hashtags.forEach((tag) => {
-    //   hashTagArr.push(" " + "#" + tag.text.toLowerCase());
-    // })
+    let text = post.text.substr(0, post.text.length - 23);
     
-
-    /*
+    post.entities.hashtags.forEach((tag) => {
+      hashTagArr.push(" " + "#" + tag.text.toLowerCase());
+    })
     
-    removes duplicats
-
-    item --> item in array
-    index --> index of item
-    array --> array reference, (in this case "list")
-
-    */
-    
+    /*  removes duplicats   */
     hashTagArr = hashTagArr.filter((item, index, array) =>
       array.indexOf(item) === index
     );
 
     return(
-      <li className="col-3 hashtag-post" key={post.id}>
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">{date.toDateString()}</h5>
-            <p className="card-text">{text}</p>
-            <a href={"https://twitter.com/" + post.user.screen_name + "/status/" + post.id_str} className="btn btn-primary" target="_blank">{user}</a>
-          </div>
+      <div className="tweetTile" key={post.id}>
+        <a href={"https://twitter.com/" + screenName + "/status/" + post.id_str} target="_blank">
+        
+        <div className="tweetContent">
+          <a href={"https://twitter.com/" + screenName} className="tweetUserLink" target="_blank">
+            <strong>{user}</strong>
+            <span>{screenName}</span>
+          </a>
+          <span className="card-title">{date.toDateString()}</span>
+          <p>{text}</p>
         </div>
-      </li>
+
+      </a>
+      </div>
     );
   });
   return (
-    <div>
-      <ul className="row hashtag-list">{hashTagArr + " "}</ul>
-      <ul className="row hashtag-results">{listPosts}</ul>
+      <div>
+      <div className="searchHashTagWrapper">
+        <div className="hashTagList">
+          {hashTagArr}          
+        </div>
+        <button className="hashTagCopy">Copy</button>
+      </div>
+      <div className="searchPostWrapper">{listPosts}</div>
     </div>
   );
 }
@@ -131,9 +132,11 @@ class Home extends Component {
     const posts = this.state.results;
 
     return(
-      <div className="container-fluid home">
+      <div className="">
 
-        <SearchBar onSearchInputChange={this.handleChange} onSearchFormSubmit={this.handleSubmit} />
+        <div className="searchSearchBarWrapper">
+          <SearchBar onSearchInputChange={this.handleChange} onSearchFormSubmit={this.handleSubmit} />
+        </div>
 
         <HashTagPosts posts={posts} />
 

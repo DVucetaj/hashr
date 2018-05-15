@@ -1,7 +1,51 @@
+.searchSearchBarWrapper{
+  height: 90px;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-areas: "logo searchBarForm links";
+  align-items: center;
+
+  background-color: #0e3042;
+}
+
+#SearchBar{
+  grid-area: searchBarForm;
+}
+
+.searchBarForm{
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  grid-template-areas: "searchInput searchSubmit";
+}
+
 .searchBarInput{
-  margin-right: 16px;
-  border: 1px solid #9B9B9B;
-  border-radius: 2px;
+  grid-area: searchInput;
+  
+  border-style: solid hidden solid solid;
+  border-width: 1px;
+  border-color: #9B9B9B;
+  border-radius: 4px 0px 0px 4px;
+  
+  min-width: 100%;
+  height: 36px;
+
+  text-indent: 16px;
+}.searchBarInput:focus{
+  outline: none;
+  /*box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;*/
+  box-shadow: 0px 0px 4px 1px #4A90E3;
+  background-color: lightyellow;
+}
+
+.searchBarSubmit{
+  grid-area: searchSubmit;
+
+  height: 36px !important;
+  line-height: 36px !important;
+  width: 90px !important;
+
+  border-radius: 0px 4px 4px 0px !important;
+
 }
 
 .linkButton{
@@ -11,9 +55,10 @@
   text-align: center;
 
   border: 1px solid #4A90E2;
-  border-radius: 2px;
+  border-radius: 4px;
   text-decoration: none;
   color: white;
   background-color: #4A90E2;
 }
+
 

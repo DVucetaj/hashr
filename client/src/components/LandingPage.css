@@ -1,4 +1,4 @@
-.landingPageLogo, .landingPageHeadline{
+.logo{
   font-family: Helvetica, sans-serif;
   font-style: oblique;
   font-weight: lighter;
@@ -6,9 +6,11 @@
 }
 .landingPageLogo{
   font-size: 144px;
+  line-height: 144px;
 }
-.langinPageHeadline{
-  font-size: 36px;
+.landingPageHeadline{
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .landingPageWrapper{

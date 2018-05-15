@@ -18,7 +18,8 @@ class LandingPage extends React.Component {
     searchBarInput.focus();
     
     this.updateWindowDimensions();
-    window.addEventListener('resize', this.updateWindowDimensions);  }
+    window.addEventListener('resize', this.updateWindowDimensions);  
+  }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateWindowDimensions);
@@ -123,8 +124,8 @@ class LandingPage extends React.Component {
         
         <div className="landingPageWrapper">
           <div className="landingPageCenter">
-            <h2 className="landingPageLogo">#hashr</h2>
-            <h4 className="landingPageHeadline">the hash slinging hashtag searcher</h4>
+            <h2 className="logo landingPageLogo">#hashr</h2>
+            <h4 className="logo landingPageHeadline">the hash slinging hashtag searcher</h4>
             <SearchBar redirect={true} />
           </div>
         </div>

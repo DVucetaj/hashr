@@ -17,8 +17,11 @@
 
 .searchPostWrapper{
   display: grid;
-  grid: auto / repeat(3, 1fr);
+  grid: auto / repeat(2, 1fr);
 
+  grid-column-gap: 1%;
+
+  padding: 0 8% 0 8%;
 }
 
 .tweetTile{
@@ -32,7 +35,6 @@
 }
 
 .tweetTile *{
-  color: rgb(13,14,15);
   text-decoration: none;
 }
 
@@ -46,20 +48,24 @@
 
 .searchHashTagWrapper{
   display: grid;
-  grid-template-columns: 1fr 72px 3fr 72px 1fr;
+  grid-template-columns: 1fr 72px 4fr 72px 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "hashL hashP hashCenter hashButton hashR";
   grid-column-gap: 8px;
 
-  padding: 12px 0 20px 0;
+
+  padding: 12px 0 16px 0;
 }
 
 .hashTagList{
   grid-area: hashCenter;
-  border: solid 1px rgb(20, 23, 26);
-  border-radius: 4px;
-  padding: 12px;
-  margin-top: 16px;
+
+
+  border-style: hidden hidden solid hidden;
+  border-width: 1px;
+  border-color: rgb(20, 23, 26);
+
+  padding: 12px 4em 12px 4em;
 
   background-color: #fff;
 
@@ -67,4 +73,5 @@
 .hashTagCopy{
   grid-area: hashButton;
   align-self: end;
+  background-color: #74CB0F;
 }

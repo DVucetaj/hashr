@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import SearchBar from './SearchBar.js';
 import './home.css';
-
+import hashrLogo from './hashr-logo-32.png';
 // function retweetSort(prop){
 //   return function(a, b) {
 //   if (a[prop] > b[prop]) {
@@ -21,7 +21,6 @@ function HashTagPosts(props) {
       <ul></ul>
     );
   }
-
 
   let hashTagArr = [];
   const listPosts = posts.map((post) => {
@@ -43,18 +42,22 @@ function HashTagPosts(props) {
 
     return(
       <div className="tweetTile" key={post.id}>
-        <a href={"https://twitter.com/" + screenName + "/status/" + post.id_str} target="_blank">
+        
         
         <div className="tweetContent">
+          
           <a href={"https://twitter.com/" + screenName} className="tweetUserLink" target="_blank">
             <strong>{user}</strong>
             <span>{screenName}</span>
           </a>
+          
           <span className="card-title">{date.toDateString()}</span>
-          <p>{text}</p>
+          
+          <a href={"https://twitter.com/" + screenName + "/status/" + post.id_str} target="_blank">
+            <p>{text}</p>
+          </a>
+        
         </div>
-
-      </a>
       </div>
     );
   });
@@ -64,7 +67,7 @@ function HashTagPosts(props) {
         <div className="hashTagList">
           {hashTagArr}          
         </div>
-        <button className="hashTagCopy">Copy</button>
+        <button className="hashTagCopy linkButton">COPY</button>
       </div>
       <div className="searchPostWrapper">{listPosts}</div>
     </div>
@@ -135,6 +138,9 @@ class Home extends Component {
       <div className="">
 
         <div className="searchSearchBarWrapper">
+          <div className="searchLogo">
+            <img src={hashrLogo}/><div className="logo">hashr</div>
+          </div>
           <SearchBar onSearchInputChange={this.handleChange} onSearchFormSubmit={this.handleSubmit} />
         </div>
 

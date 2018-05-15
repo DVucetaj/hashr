@@ -8,6 +8,23 @@
   background-color: #0e3042;
 }
 
+.searchLogo{
+  grid-area: logo;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 4px;
+  align-items: center;
+}
+.searchLogo img{
+  justify-self: end;  
+}
+.searchLogo .logo{
+  color: white !important;
+  font-size: 24px;
+  line-height: 24px;
+}
+
 #SearchBar{
   grid-area: searchBarForm;
 }
@@ -53,6 +70,8 @@
   height: 24px;
   line-height: 24px;
   text-align: center;
+
+  font-size: .8em;
 
   border: 1px solid #4A90E2;
   border-radius: 4px;

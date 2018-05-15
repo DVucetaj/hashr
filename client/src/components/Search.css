@@ -1,0 +1,61 @@
+.home .hashtag-results, .hashtag-post, .hashtag-list {
+  margin-top: 1.8em;
+}
+
+.hashtag-results {
+  list-style-type: none;
+}
+
+.searchPostWrapper{
+  display: grid;
+  grid: auto / repeat(3, 1fr);
+
+}
+
+.tweetTile{
+  background-color: #fff;
+
+  border: solid 1px rgb(20, 23, 26);
+  border-radius: 4px;
+
+  margin: 8px;
+  padding: 8px;
+}
+
+.tweetTile *{
+  color: rgb(13,14,15);
+  text-decoration: none;
+}
+
+.tweetUserLink, .tweetUserLink strong{
+  
+}
+
+.tweetUserLink:hover{
+  text-decoration: underline;
+}
+
+.searchHashTagWrapper{
+  display: grid;
+  grid-template-columns: 1fr 72px 3fr 72px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "hashL hashP hashCenter hashButton hashR";
+  grid-column-gap: 8px;
+
+  padding: 12px 0 20px 0;
+}
+
+.hashTagList{
+  grid-area: hashCenter;
+  border: solid 1px rgb(20, 23, 26);
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 16px;
+
+  background-color: #fff;
+
+}
+.hashTagCopy{
+  grid-area: hashButton;
+  align-self: end;
+}

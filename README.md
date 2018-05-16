@@ -83,9 +83,9 @@ Both of them can be initiated via  `npm start` in the appropriate folders
 
 ## Built With
 
-* [NodeJS](https://nodejs.org/en/)
-* [ReactJS](https://reactjs.org/)
-* [ExpressJS](https://expressjs.com/)
+* [NodeJS](https://nodejs.org/en/)[nodejs](https://s3.amazonaws.com/openshift-hub/production/quickstarts/243/nodejs_custom.png "NodeJS logo")
+* [ReactJS](https://reactjs.org/)[reactjs](https://www.manejandodatos.es/wp-content/uploads/2016/02/reactJS-120x120.jpg "ReactJS logo")
+* [ExpressJS](https://expressjs.com/)[expressjs](https://i2.wp.com/nodejs-cloud.com/img/128px/expressjs.png "ExpressJS")
 
 ## Authors
 

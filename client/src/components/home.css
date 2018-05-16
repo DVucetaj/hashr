@@ -40,9 +40,9 @@
   font-size: 14px;
   padding: 12px;
 }.tweetTile:hover{
-  background-color: #e6ecf0;
-  border-style: none;
-  box-shadow: 0px 0px 4px 1px #4A90E3;
+  background-color: #FAFAFA;
+  border-color: #FAFAFA;
+  box-shadow: 0px 0px 4px 1px #FCA712;
 }
 
 .tweetUserLink, .tweetUserLink strong{

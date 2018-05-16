@@ -44,7 +44,7 @@ The tool uses a 64-bit encoded version of the keys, so the format is the Consume
     
 Creating environemnt keys will vary depending on the environment you are working in. 
 
-### Installing
+# Installing
 
 
 To get started with running the tool, first clone a it to your local machine using: 
@@ -65,7 +65,7 @@ Once finished, navidate to the client side
     cd client
     npm install
     
-Once the dependencies are installed, the front end needs to be built. 
+Once the dependencies are installed for the client side, the front end needs to be built. 
 
     npm run build
     

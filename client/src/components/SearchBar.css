@@ -24,6 +24,12 @@
   font-size: 24px;
   line-height: 24px;
 }
+.gitHubLink{
+  place-self: center;
+  color: #fff;
+}.gitHubLink:hover, .gitHubLink:visited{
+  color: #fff;
+}
 
 #SearchBar{
   grid-area: searchBarForm;

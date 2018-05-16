@@ -30,7 +30,7 @@ function HashTagPosts(props) {
     let date = `${post.created_at.substr(4, 10)}, ${post.created_at.substr(post.created_at.length - 4)} ${post.created_at.substr(11, 19)}`;
     date = new Date(date);
     let text = post.text.substr(0, post.text.length - 23);
-    
+
     
     post.entities.hashtags.forEach((tag) => {
       hashTagArr.push(" #" + tag.text.toLowerCase());
@@ -143,6 +143,8 @@ class Home extends Component {
             <div className="logo">hashr</div>
           </div>
           <SearchBar onSearchInputChange={this.handleChange} onSearchFormSubmit={this.handleSubmit} />
+        
+          <a className="gitHubLink" href="https://github.com/DVucetaj/hashfinder" targer="_blank">GitHub</a>
         </div>
 
         <HashTagPosts posts={posts} />

@@ -31,8 +31,9 @@ function HashTagPosts(props) {
     date = new Date(date);
     let text = post.text.substr(0, post.text.length - 23);
     
+    
     post.entities.hashtags.forEach((tag) => {
-      hashTagArr.push(" " + "#" + tag.text.toLowerCase());
+      hashTagArr.push(" #" + tag.text.toLowerCase());
     })
     
     /*  removes duplicats   */
@@ -42,22 +43,21 @@ function HashTagPosts(props) {
 
     return(
       <div className="tweetTile" key={post.id}>
-        
-        
-        <div className="tweetContent">
-          
+      
           <a href={"https://twitter.com/" + screenName} className="tweetUserLink" target="_blank">
-            <strong>{user}</strong>
-            <span>{screenName}</span>
+            
+            <strong className="tweetUser">{user}</strong>
+            <span className="tweetScreenName">{" @" + screenName}</span>
+            
+            
           </a>
           
-          <span className="card-title">{date.toDateString()}</span>
+          <span className="card-title tweetDate">{date.toDateString()}</span>
           
           <a href={"https://twitter.com/" + screenName + "/status/" + post.id_str} target="_blank">
-            <p>{text}</p>
+            <p className="tweetText">{text}</p>
           </a>
-        
-        </div>
+      
       </div>
     );
   });
@@ -139,7 +139,8 @@ class Home extends Component {
 
         <div className="searchSearchBarWrapper">
           <div className="searchLogo">
-            <img src={hashrLogo}/><div className="logo">hashr</div>
+            <img src={hashrLogo} alt="hashr logo"/>
+            <div className="logo">hashr</div>
           </div>
           <SearchBar onSearchInputChange={this.handleChange} onSearchFormSubmit={this.handleSubmit} />
         </div>

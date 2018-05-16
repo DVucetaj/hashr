@@ -46,7 +46,7 @@
   min-width: 100%;
   height: 36px;
 
-  text-indent: 16px;
+  text-indent: 20px;
 }.searchBarInput:focus{
   outline: none;
   /*box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;*/

@@ -7,10 +7,12 @@
 .landingPageLogo{
   font-size: 144px;
   line-height: 144px;
+  margin: 0;
 }
 .landingPageHeadline{
   font-size: 24px;
   line-height: 24px;
+  /*margin: 0;*/
 }
 
 .landingPageWrapper{
@@ -19,7 +21,7 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-rows: 5fr 4fr 3fr; 
   grid-template-areas:
   "one two three"
   "four center six"

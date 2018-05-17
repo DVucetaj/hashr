@@ -83,6 +83,14 @@ Both of them can be initiated via  `npm start` in the appropriate folders
     cd hashr/client
     npm start
 
+## TODO
+* Copy button functionality
+* Create and connect database for better data collection
+* Filter out explicit hashtags
+* Update module stylings
+* Integrate Instagram & Facebook API
+
+
 ## Built With
 
 * [NodeJS](https://nodejs.org/en/)![nodejs](https://s3.amazonaws.com/openshift-hub/production/quickstarts/243/nodejs_custom.png "NodeJS logo")

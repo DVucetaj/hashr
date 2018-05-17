@@ -1,5 +1,9 @@
 const express = require('express');
 const path = require('path');
+var http = require("http");
+setInterval(function() {
+    http.get("http://hashrctp.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
 
 const app = express();
 const bodyParser = require('body-parser');

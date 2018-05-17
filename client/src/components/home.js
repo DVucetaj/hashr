@@ -2,16 +2,17 @@ import React, {Component} from 'react';
 import SearchBar from './SearchBar.js';
 import './home.css';
 import hashrLogo from './hashr-logo-32.png';
-// function retweetSort(prop){
-//   return function(a, b) {
-//   if (a[prop] > b[prop]) {
-//     return 1;
-//   } else if (a[prop] < b[prop]) {
-//     return -1;
-//   }
-//     return 0;
-//   }
-// }
+
+function retweetSort(prop){
+  return function(a, b) {
+  if (a[prop] > b[prop]) {
+    return 1;
+  } else if (a[prop] < b[prop]) {
+    return -1;
+  }
+    return 0;
+  }
+}
 
 function HashTagPosts(props) {
   const posts = props.posts;
@@ -31,33 +32,33 @@ function HashTagPosts(props) {
     date = new Date(date);
     let text = post.text.substr(0, post.text.length - 23);
 
-    
+
     post.entities.hashtags.forEach((tag) => {
       hashTagArr.push(" #" + tag.text.toLowerCase());
     })
-    
-    /*  removes duplicats   */
+
+    /*  removes duplicates   */
     hashTagArr = hashTagArr.filter((item, index, array) =>
       array.indexOf(item) === index
     );
 
     return(
       <div className="tweetTile" key={post.id}>
-      
+
           <a href={"https://twitter.com/" + screenName} className="tweetUserLink" target="_blank">
-            
+
             <strong className="tweetUser">{user}</strong>
             <span className="tweetScreenName">{" @" + screenName}</span>
-            
-            
+
+
           </a>
-          
+
           <span className="card-title tweetDate">{date.toDateString()}</span>
-          
+
           <a href={"https://twitter.com/" + screenName + "/status/" + post.id_str} target="_blank">
             <p className="tweetText">{text}</p>
           </a>
-      
+
       </div>
     );
   });
@@ -65,7 +66,7 @@ function HashTagPosts(props) {
       <div>
       <div className="searchHashTagWrapper">
         <div className="hashTagList">
-          {hashTagArr}          
+          {hashTagArr}
         </div>
         <button className="hashTagCopy linkButton">COPY</button>
       </div>
@@ -87,7 +88,7 @@ class Home extends Component {
 
   componentDidMount() {
     const searchBarInput = document.getElementById('search-bar-input');
-    searchBarInput.focus();  
+    searchBarInput.focus();
 
     const search_term = this.props.match.params.hashtag;
 
@@ -116,7 +117,7 @@ class Home extends Component {
       return res.json();
     })
     .then((results) => {
-      //results.sort(retweetSort("retweet_count")).reverse();
+      results.sort(retweetSort("retweet_count")).reverse();
       this.setState({ results });
             this.props.history.push({
         pathname: `/search/${search_term}`
@@ -138,13 +139,15 @@ class Home extends Component {
       <div className="">
 
         <div className="searchSearchBarWrapper">
+        <a href="/">
           <div className="searchLogo">
-            <img src={hashrLogo} alt="hashr logo"/>
-            <div className="logo">hashr</div>
+              <img src={hashrLogo} alt="hashr logo"/>
+              <div className="logo">hashr</div>
           </div>
+        </a>
           <SearchBar onSearchInputChange={this.handleChange} onSearchFormSubmit={this.handleSubmit} />
-        
-          <a className="gitHubLink" href="https://github.com/DVucetaj/hashfinder" targer="_blank">GitHub</a>
+
+          <a className="gitHubLink" href="https://github.com/DVucetaj/hashr" targer="_blank">GitHub</a>
         </div>
 
         <HashTagPosts posts={posts} />

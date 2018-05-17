@@ -2,6 +2,8 @@
 
 #hashr is a hashtag searching tool working to solve the problem of relevant hashtags in multimedia marketing
 
+Demo it **[here](https://hashrctp.herokuapp.com/)**!
+
 ## Getting Started
 ### Prerequisites
 
@@ -80,6 +82,14 @@ Both of them can be initiated via  `npm start` in the appropriate folders
 #### Client side Terminal
     cd hashr/client
     npm start
+
+## TODO
+* Copy button functionality
+* Create and connect database for better data collection
+* Filter out explicit hashtags
+* Update module stylings
+* Integrate Instagram & Facebook API
+
 
 ## Built With
 

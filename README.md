@@ -2,8 +2,6 @@
 
 #hashr is a hashtag searching tool working to solve the problem of relevant hashtags in multimedia marketing
 
-Demo it **[here](https://hashrctp.herokuapp.com/)**!
-
 ## Getting Started
 ### Prerequisites
 
